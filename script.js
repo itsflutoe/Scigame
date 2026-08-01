@@ -57,8 +57,8 @@ const stages = [
     },
     {
         question: "What comes after Hatching?",
-        answers: ["chick", "chicks", "chic", "chik", "baby chick", "little chick"],
-        name: "C__ck",
+        answers: ["chick", "chicks", "chic", "chik", "baby chick", "little chick", "chick", "tick", "sisiw", "lick"],
+        name: "Ch__k",
         fullName: "Chick",
         emoji: "🐥",
         image: "images/chick.webp"
