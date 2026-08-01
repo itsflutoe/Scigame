@@ -424,11 +424,15 @@ function checkAnswer(alternatives) {
     heardText.textContent = bestHeard;
     heardBox.classList.add("active");
 
-    if (matched) {
-        feedback.textContent = "✅ Correct!";
-        feedback.className = "success";
+if (matched) {
+    feedback.textContent = "✅ Correct!";
+    feedback.className = "success";
 
-        currentStageBox.classList.add("changing");
+    // Reveal the full correct answer
+    const stage = stages[currentStage];
+    stageName.textContent = stage.fullName || stage.name;
+
+    currentStageBox.classList.add("changing");
 
         setTimeout(() => {
             currentStage++;
