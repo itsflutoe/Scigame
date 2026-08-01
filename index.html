@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Lab - Chicken Life Cycle Mission</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+    <!-- PROGRESS BAR -->
+    <div id="progress-container">
+        <div id="progress-bar">
+            <div id="progress-fill"></div>
+        </div>
+        <div id="progress-text">0/5</div>
+    </div>
+
+    <!-- HOME -->
+    <section id="home-screen" class="screen active">
+        <div class="card home-card">
+            <div class="emoji-header">🧪</div>
+            <h1 class="title">Animal Lab</h1>
+            <div class="mission-badge">Mission 1</div>
+            <div class="emoji-large">🐔</div>
+            <h2 class="subtitle">Chicken Life Cycle</h2>
+            <button id="start-btn" class="btn-primary">
+                <span class="btn-icon">▶️</span>
+                START
+            </button>
+        </div>
+    </section>
+
+    <!-- INTRO: "Who am I?" -->
+    <section id="intro-screen" class="screen">
+        <div class="card">
+            <div class="stage-image-container">
+                <img id="intro-chicken" src="" alt="Chicken" class="stage-image placeholder-img">
+            </div>
+            <h2 class="question">Who am I?</h2>
+            <button id="intro-mic-btn" class="mic-btn">
+                <span class="mic-icon">🎤</span>
+            </button>
+            <div id="intro-feedback" class="feedback"></div>
+        </div>
+    </section>
+
+    <!-- STAGE 1: EGGS -->
+    <section id="stage1-screen" class="screen">
+        <div class="card">
+            <div class="lifecycle-container">
+                <div class="stage-item visible" data-stage="eggs">
+                    <div class="stage-img placeholder-img"></div>
+                    <div class="stage-name">Eggs</div>
+                </div>
+            </div>
+            <h2 class="question">What is the first stage?</h2>
+            <button id="stage1-mic-btn" class="mic-btn">
+                <span class="mic-icon">🎤</span>
+            </button>
+            <div id="stage1-feedback" class="feedback"></div>
+        </div>
+    </section>
+
+    <!-- STAGE 2: EMBRYO -->
+    <section id="stage2-screen" class="screen">
+        <div class="card">
+            <div class="lifecycle-container">
+                <div class="stage-item visible" data-stage="eggs">
+                    <div class="stage-img placeholder-img"></div>
+                    <div class="stage-name">Eggs</div>
+                </div>
+                <div class="arrow">⬇️</div>
+                <div class="stage-item hidden" data-stage="embryo">
+                    <div class="stage-img placeholder-img"></div>
+                    <div class="stage-name">Embryo</div>
+                </div>
+            </div>
+            <h2 class="question">What is the next stage?</h2>
+            <button id="stage2-mic-btn" class="mic-btn">
+                <span class="mic-icon">🎤</span>
+            </button>
+            <div id="stage2-feedback" class="feedback"></div>
+        </div>
+    </section>
+
+    <!-- STAGE 3: HATCHING -->
+    <section id="stage3-screen" class="screen">
+        <div class="card">
+            <div class="lifecycle-container">
+                <div class="stage-item visible" data-stage="eggs">
+                    <div class="stage-img placeholder-img"></div>
+                    <div class="stage-name">Eggs</div>
+                </div>
+                <div class="arrow">⬇️</div>
+                <div class="stage-item visible" data-stage="embryo">
+                    <div class="stage-img placeholder-img"></div>
+                    <div class="stage-name">Embryo</div>
+                </div>
+                <div class="arrow">⬇️</div>
+                <div class="stage-item hidden" data-stage="hatching">
+                    <div class="stage-img placeholder-img"></div>
+                    <div class="stage-name">Hatching</div>
+                </div>
+            </div>
+            <h2 class="question">What comes next?</h2>
+            <button id="stage3-mic-btn" class="mic-btn">
+                <span class="mic-icon">🎤</span>
+            </button>
+            <div id="stage3-feedback" class="feedback"></div>
+        </div>
+    </section>
+
+    <!-- STAGE 4: CHICK -->
+    <section id="stage4-screen" class="screen">
+        <div class="card">
+            <div class="lifecycle-container">
+                <div class="stage-item visible" data-stage="eggs">
+                    <div class="stage-img placeholder-img"></div>
+                    <div class="stage-name">Eggs</div>
+                </div>
+                <div class="arrow">⬇️</div>
+                <div class="stage-item visible" data-stage="embryo">
+                    <div class="stage-img placeholder-img"></div>
+                    <div class="stage-name">Embryo</div>
+                </div>
+                <div class="arrow">⬇️</div>
+                <div class="stage-item visible" data-stage="hatching">
+                    <div class="stage-img placeholder-img"></div>
+                    <div class="stage-name">Hatching</div>
+                </div>
+                <div class="arrow">⬇️</div>
+                <div class="stage-item hidden" data-stage="chick">
+                    <div class="stage-img placeholder-img"></div>
+                    <div class="stage-name">Chick</div>
+                </div>
+            </div>
+            <h2 class="question">What is the next stage?</h2>
+            <button id="stage4-mic-btn" class="mic-btn">
+                <span class="mic-icon">🎤</span>
+            </button>
+            <div id="stage4-feedback" class="feedback"></div>
+        </div>
+    </section>
+
+    <!-- STAGE 5: CHICKEN -->
+    <section id="stage5-screen" class="screen">
+        <div class="card">
+            <div class="lifecycle-container">
+                <div class="stage-item visible" data-stage="eggs">
+                    <div class="stage-img placeholder-img"></div>
+                    <div class="stage-name">Eggs</div>
+                </div>
+                <div class="arrow">⬇️</div>
+                <div class="stage-item visible" data-stage="embryo">
+                    <div class="stage-img placeholder-img"></div>
+                    <div class="stage-name">Embryo</div>
+                </div>
+                <div class="arrow">⬇️</div>
+                <div class="stage-item visible" data-stage="hatching">
+                    <div class="stage-img placeholder-img"></div>
+                    <div class="stage-name">Hatching</div>
+                </div>
+                <div class="arrow">⬇️</div>
+                <div class="stage-item visible" data-stage="chick">
+                    <div class="stage-img placeholder-img"></div>
+                    <div class="stage-name">Chick</div>
+                </div>
+                <div class="arrow">⬇️</div>
+                <div class="stage-item hidden" data-stage="chicken">
+                    <div class="stage-img placeholder-img"></div>
+                    <div class="stage-name">Chicken</div>
+                </div>
+            </div>
+            <h2 class="question">What is the final stage?</h2>
+            <button id="stage5-mic-btn" class="mic-btn">
+                <span class="mic-icon">🎤</span>
+            </button>
+            <div id="stage5-feedback" class="feedback"></div>
+        </div>
+    </section>
+
+    <!-- COMPLETE -->
+    <section id="complete-screen" class="screen">
+        <div class="card complete-card">
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <h1 class="complete-title">MISSION COMPLETE!</h1>
+            <p class="complete-message">You completed the Chicken Life Cycle</p>
+            <div class="lifecycle-complete">
+                <div class="stage-item visible"><div class="stage-name">Eggs</div></div>
+                <div class="arrow">⬇️</div>
+                <div class="stage-item visible"><div class="stage-name">Embryo</div></div>
+                <div class="arrow">⬇️</div>
+                <div class="stage-item visible"><div class="stage-name">Hatching</div></div>
+                <div class="arrow">⬇️</div>
+                <div class="stage-item visible"><div class="stage-name">Chick</div></div>
+                <div class="arrow">⬇️</div>
+                <div class="stage-item visible"><div class="stage-name">Chicken</div></div>
+            </div>
+            <button id="restart-btn" class="btn-primary">
+                <span class="btn-icon">🔄</span>
+                Restart
+            </button>
+        </div>
+        <div id="confetti-container"></div>
+    </section>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
