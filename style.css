@@ -388,32 +388,111 @@ body {
    COMPLETE SCREEN
 =========================== */
 
+.complete-card {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
 .stars {
-    font-size: 46px;
-    margin-bottom: 16px;
+    font-size: 42px;
+    margin-bottom: 12px;
     animation: twinkle 2s ease-in-out infinite;
-    letter-spacing: 4px;
+    letter-spacing: 6px;
+}
+
+.complete-title {
+    font-size: 2.4rem;
+    font-weight: 800;
+    color: #1a1a2e;
+    margin-bottom: 8px;
 }
 
 .complete-msg {
-    font-size: 1.3rem;
+    font-size: 1.15rem;
     color: #5a6a7a;
-    margin: 8px 0 20px;
+    margin: 0 0 28px;
+    line-height: 1.4;
 }
 
 .finishedCycle {
-    margin: 28px 0 32px;
-    font-size: 1.7rem;
-    line-height: 1.7;
-    background: linear-gradient(145deg, #f0f9ff, #e3f2fd);
-    border-radius: 18px;
-    padding: 22px 16px;
-    border: 1px solid #bbdefb;
+    margin: 0 auto 36px;
+    background: linear-gradient(145deg, #f8fbff, #eef6ff);
+    border-radius: 24px;
+    padding: 28px 20px;
+    border: 1px solid #d6e9ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 6px 4px;
+    max-width: 520px;
+    box-shadow: 0 8px 24px rgba(0, 100, 200, 0.08);
+}
+
+.finishedCycle .cycle-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 8px;
+    border-radius: 16px;
+    background: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    min-width: 78px;
+}
+
+.finishedCycle .cycle-item img {
+    width: 58px;
+    height: 58px;
+    object-fit: contain;
+}
+
+.finishedCycle .cycle-item span {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #2c3e50;
+}
+
+.finishedCycle .cycle-arrow {
+    font-size: 1.3rem;
+    color: #90a4ae;
+    font-weight: 700;
+    padding: 0 2px;
 }
 
 @keyframes twinkle {
     0%, 100% { transform: scale(1); }
     50% { transform: scale(1.08); }
+}
+
+/* Mobile complete screen */
+@media (max-width: 600px) {
+    .finishedCycle {
+        padding: 20px 12px;
+        gap: 8px 2px;
+    }
+
+    .finishedCycle .cycle-item {
+        min-width: 64px;
+        padding: 6px 4px;
+    }
+
+    .finishedCycle .cycle-item img {
+        width: 48px;
+        height: 48px;
+    }
+
+    .finishedCycle .cycle-item span {
+        font-size: 0.72rem;
+    }
+
+    .finishedCycle .cycle-arrow {
+        font-size: 1.1rem;
+    }
+
+    .complete-title {
+        font-size: 1.9rem;
+    }
 }
 
 /* ===========================
@@ -498,4 +577,11 @@ button:focus-visible {
 
 .micBtn:focus-visible {
     box-shadow: 0 0 0 4px rgba(33, 150, 243, 0.5), 0 12px 28px rgba(2, 136, 209, 0.35);
+}
+
+.hero-img {
+    width: 140px;
+    height: 140px;
+    object-fit: contain;
+    filter: drop-shadow(0 8px 12px rgba(0, 0, 0, 0.12));
 }

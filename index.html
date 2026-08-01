@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Animal Lab | Chicken Life Cycle</title>
+    <title>Science Demo | Chicken Life Cycle</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -27,7 +27,9 @@
             <div class="card">
                 <div class="badge">Mission 1</div>
                 <h1 class="title">Animal Lab</h1>
-                <div class="hero">🐔</div>
+               <div class="hero">
+    <img src="images/chicken.png" alt="Chicken" class="hero-img">
+</div>
                 <h2 class="subtitle">Chicken Life Cycle</h2>
                 <p class="home-desc">Learn the 5 stages of a chicken’s life by speaking the answers!</p>
                 <button id="startBtn" class="mainBtn">START MISSION</button>
@@ -42,7 +44,7 @@
                 <!-- Single current stage display -->
                 <div class="current-stage" id="currentStageBox">
                     <div class="stage-image" id="stageImage">🥚</div>
-                    <div class="stage-name" id="stageName">Eggs</div>
+                    <div class="stage-name" id="stageName">E__</div>
                 </div>
 
                 <div class="mic-area">
@@ -63,12 +65,12 @@
 
         <!-- COMPLETE -->
         <section id="completeScreen" class="screen">
-            <div class="card">
+            <div class="card complete-card">
                 <div class="stars">⭐⭐⭐⭐⭐</div>
-                <h1>Mission Complete!</h1>
-                <p class="complete-msg">Great Job!</p>
-                <div class="finishedCycle">
-                    🥚 ➜ 🧬 ➜ 🐣 ➜ 🐥 ➜ 🐔
+                <h1 class="complete-title">Mission Complete!</h1>
+                <p class="complete-msg">Awesome work! You learned the full chicken life cycle!</p>
+                <div class="finishedCycle" id="finishedCycle">
+                    <!-- Filled by JavaScript with real images -->
                 </div>
                 <button id="restartBtn" class="mainBtn">PLAY AGAIN</button>
             </div>
